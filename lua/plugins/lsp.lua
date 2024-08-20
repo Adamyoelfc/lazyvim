@@ -21,6 +21,12 @@ return {
         setup_handlers = {
           function(server_name)
             -- Exclude ruby-lsp from being setup by Mason
+            -- if server_name == "solargraph" then
+            --   require("lspconfig")[server_name].setup({
+            --     cmd = { "solargraph", "stdio" }, -- Use the globally installed solargraph
+            --   })
+            -- end
+
             if server_name ~= "ruby-lsp" then
               require("lspconfig")[server_name].setup({})
             end
