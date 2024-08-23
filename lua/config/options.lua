@@ -4,6 +4,8 @@
 
 vim.opt.pumblend = 0
 
+vim.g.autoformat = false
+
 return {
   "hrsh7th/nvim-cmp",
   dependencies = { "hrsh7th/cmp-emoji" },
@@ -14,7 +16,7 @@ return {
 
     -- Add window configuration for completion and documentation
     opts.window = {
-      completion = require("cmp").config.window.bordered(), -- Adds borders to the completion window
+      completion = require("cmp").config.window.bordered(),    -- Adds borders to the completion window
       documentation = require("cmp").config.window.bordered(), -- Adds borders to the documentation window
     }
 

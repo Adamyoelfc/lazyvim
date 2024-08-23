@@ -17,7 +17,6 @@ return {
           -- "solargraph",
           -- -- "ruby-lsp",  -- This is intentionally commented out
         },
-
         setup_handlers = {
           function(server_name)
             -- Exclude ruby-lsp from being setup by Mason
