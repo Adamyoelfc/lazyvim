@@ -3,6 +3,11 @@
 -- Add any additional keymaps here
 
 
+
+-- nvim-dbee
+vim.api.nvim_set_keymap("n", "<leader>db", "<cmd>lua require(\"dbee\").open()<CR>", { noremap = true, silent = true })
+
+
 vim.api.nvim_set_keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
 
 local chat = require("CopilotChat")
