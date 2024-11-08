@@ -15,6 +15,16 @@ return {
       },
     },
   },
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      -- transparent_background = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   floats = "transparent",
+      -- },
+    },
+  },
 
   -- {
   --   "sainnhe/everforest",
@@ -31,7 +41,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "onedark",
     },
   },
 }
