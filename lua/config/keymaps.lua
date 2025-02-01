@@ -3,11 +3,6 @@
 -- Add any additional keymaps here
 
 
-
--- nvim-dbee
-vim.api.nvim_set_keymap("n", "<leader>db", "<cmd>lua require(\"dbee\").open()<CR>", { noremap = true, silent = true })
-
-
 vim.api.nvim_set_keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
 
 local chat = require("CopilotChat")
@@ -66,3 +61,10 @@ vim.api.nvim_set_keymap("v", "J", ":move '>+1<CR>gv=gv", { noremap = true, silen
 -- )
 
 vim.api.nvim_set_keymap("n", "<leader>ft", ":terminal<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Esc><Esc>', '<C-\\><C-n>', { noremap = true, silent = true }) -- Salir con Esc Esc
+
+-- Mapeos para moverte entre ventanas con Ctrl+h, Ctrl+l, etc.
+vim.api.nvim_set_keymap('t', '<C-h>', '<C-\\><C-n><C-w>h', { noremap = true, silent = true }) -- Izquierda
+vim.api.nvim_set_keymap('t', '<C-l>', '<C-\\><C-n><C-w>l', { noremap = true, silent = true }) -- Derecha
+vim.api.nvim_set_keymap('t', '<C-j>', '<C-\\><C-n><C-w>j', { noremap = true, silent = true }) -- Abajo
+vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-n><C-w>k', { noremap = true, silent = true }) -- Arriba

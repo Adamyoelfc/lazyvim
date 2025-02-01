@@ -4,17 +4,6 @@ return {
 
   -- add everforest
   { "sainnhe/everforest" },
-
-  {
-    "catppuccin/nvim",
-    opts = {
-      transparent_background = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-  },
   {
     "navarasu/onedark.nvim",
     opts = {
