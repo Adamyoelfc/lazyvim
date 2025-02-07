@@ -1,8 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.lang.tailwind",
-    "lazyvim.plugins.extras.lang.typescript"
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.ui.dashboard-nvim"
   ],
   "news": {
     "NEWS.md": "10960"
