@@ -6,6 +6,9 @@ vim.opt.pumblend = 0
 
 vim.g.autoformat = false
 
+
+vim.g.snacks_animate = false
+
 return {
   "hrsh7th/nvim-cmp",
   dependencies = { "hrsh7th/cmp-emoji" },
